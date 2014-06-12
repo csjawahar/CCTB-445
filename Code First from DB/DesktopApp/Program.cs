@@ -18,5 +18,8 @@ namespace DesktopApp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
+
+        const string message = "An unhandled exception occurred in DesktopApp. {0}{1}";
+        //private static void Application_Thread
     }
 }

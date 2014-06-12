@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesktopApp.Reoprts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace DesktopApp
 {
@@ -45,10 +47,11 @@ namespace DesktopApp
 
         private void shippersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewShippers theform = new ViewShippers();
+            LaunchOrActivate<ViewShippers>();
+            /*ViewShippers theform = new ViewShippers();
             theform.MdiParent = this; //tell the new form I am the parent
             theform.WindowState = FormWindowState.Maximized;
-            theform.Show(); //no pause here
+            theform.Show(); //no pause here*/
             MessageBox.Show("Here is ViewShipper form!");
 
         }
@@ -60,7 +63,11 @@ namespace DesktopApp
 
         private void productSalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            LaunchOrActivate<ProductSalesForm>();
+            /*ProductSalesForm repoForm = new ProductSalesForm();
+            repoForm.MdiParent = this; //tell the new form I am the parent
+            repoForm.WindowState = FormWindowState.Maximized; 
+            repoForm.Show();*/
         }
 
         private void aboutThisAppToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,5 +78,37 @@ namespace DesktopApp
             theform.ShowDialog(); //we pause till the aboutapp form is closed.
             MessageBox.Show("Thanks for asking!");
         }
+
+        #region Support Methods
+        private void LaunchOrActivate<T>() where T : Form, new()
+        {
+            T theForm = GetChildForm<T>();
+            if (theForm == null)
+            {
+                theForm = new T();
+                theForm.MdiParent = this;
+                theForm.WindowState = FormWindowState.Maximized;
+                theForm.Show();
+            }
+            else
+            {
+                theForm.WindowState = FormWindowState.Maximized;
+                theForm.Focus();
+            }
+        }
+
+        private T GetChildForm<T>() where T : Form
+        {
+            foreach (var childform in MdiChildren)
+            {
+                if (childform is T)
+                    return (T)childform;
+            }
+
+            return null;
+        }
+        #endregion
     }
+
+   
 }

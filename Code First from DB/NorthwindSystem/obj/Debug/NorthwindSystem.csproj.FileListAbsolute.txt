@@ -5,8 +5,5 @@ C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\
 C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\Debug\EntityFramework.xml
 C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\obj\Debug\NorthwindSystem.csprojResolveAssemblyReference.cache
 C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\obj\Debug\NorthwindSystem.dll
 C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\obj\Debug\NorthwindSystem.pdb
-C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\Debug\NorthwindSystem.dll.CodeAnalysisLog.xml
-C:\Users\WB122\Documents\GitHub\CCTB-445\Code First from DB\NorthwindSystem\bin\Debug\NorthwindSystem.dll.lastcodeanalysissucceeded
