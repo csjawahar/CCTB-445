@@ -1,0 +1,6 @@
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\bin\Debug\FileIOBasics.exe.config
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\obj\Debug\FileIOBasics.csprojResolveAssemblyReference.cache
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\bin\Debug\FileIOBasics.exe
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\bin\Debug\FileIOBasics.pdb
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\obj\Debug\FileIOBasics.exe
+C:\Users\WB122\Documents\GitHub\CCTB-445\FileIOBasics\FileIOBasics\obj\Debug\FileIOBasics.pdb
